@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Atlas Digital Dunia — Data Resmi World Bank</title>
+<meta name="description" content="Dashboard data digital dunia: pengguna internet, langganan seluler, broadband tetap, akses listrik, dan populasi — snapshot resmi World Bank Open Data 2000–2023." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <div>
+      <h1>Atlas Digital Dunia</h1>
+      <p class="brand-sub">Snapshot resmi · World Bank Open Data · 2000–2023</p>
+    </div>
+  </div>
+  <nav id="nav" aria-label="Navigasi utama">
+    <a href="#/" data-route="dashboard">Dashboard</a>
+    <a href="#/katalog" data-route="katalog">Katalog Data</a>
+    <a href="#/terbaru" data-route="terbaru">Data Terbaru</a>
+  </nav>
+</header>
+
+<main id="app"></main>
+
+<footer class="site-footer">
+  <p>Sumber data: <strong>The World Bank — World Development Indicators</strong>
+    (<a href="https://api.worldbank.org/v2" target="_blank" rel="noopener">api.worldbank.org</a>).
+    Data diambil sebagai snapshot dan disajikan apa adanya — bukan angka langsung (live).</p>
+  <p id="footer-meta"></p>
+</footer>
+
+<script src="vendor/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
